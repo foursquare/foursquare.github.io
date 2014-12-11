@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <title>Foursquare Open Source</title>
+  <meta content="en" http-equiv="Content-Language" />
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <meta content="Foursquare Open Source" name="application-name" />
+  <meta content="#0ca9c9" name="msapplication-TileColor" />
+  <meta content="https://playfoursquare.s3.amazonaws.com/misc/foursquare-144-logo.png" name="msapplication-TileImage" />
+  <meta content="Start the foursquare App" name="msapplication-tooltip" />
+  <meta content="/" name="msapplication-starturl" />
+  <meta content="width=1024;height=768" name="msapplication-window" />
+<!--   <meta content="Foursquare helps you find the perfect places to go with friends. Discover the best food, nightlife, and entertainment in your area." name="description" /> -->
+<!--   <meta content="Foursquare,foursq,4sq,check-in,badges,explore,recommendation,local,review,tip,restaurant,bar,coffee,park,New York,San Francisco,Chicago,London,sushi,pizza,cocktails,vacation,food,search,cities" name="keywords" /> -->
+  <link href="https://ss1.4sqi.net/styles/master-f2c1890513ac1eb7002a67c8c0939d72.css" type="text/css" rel="stylesheet"/>
+  <link href="https://ss1.4sqi.net/styles/standalone-pages/new-logged-in-homepage-08a5b5247f6f017f8821d94022a2b967.css" type="text/css" rel="stylesheet"/>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="logo" href="https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.svg" type="image/svg"/>
+  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/third_party/jquery-1.7.2.min-b8d64d0bc142b3f670cc0611b0aebcae.js"></script>
+  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/leaflet/root-769b42a8d1a484c702db4f44bfd715e0.js"></script>
+  <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/chrome/root-51d1a8400fde312182bb11910dc00b49.js"></script>
+  <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/foursquare/root-0e93fdc531ae3f3daa5d2c56e0a8041a.js"></script>
+  <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/foursquare/map-support-23c66fbc82e3b6f7c4b34b53b771a0e1.js"></script>
+  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/foursquare/new-logged-in-homepage-1dfb0833de2dc8d417efba3745f89b8f.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  if (window.location.host === 'developer.foursquare.com') {
+    _gaq.push(['_setAccount', 'UA-2322480-16']);
+  } else if (window.location.pathname.indexOf('/mobile/') === 0) {
+    _gaq.push(['_setAccount', 'UA-2322480-9']);
+  } else {
+    _gaq.push(['_setAccount', 'UA-2322480-5']);
+  }
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _sf_startpt=(new Date()).getTime();
+  var _sf_async_config = {uid: 11280};
+  if (window.location.host != 'developer.foursquare.com') {
+    _sf_async_config.domain = 'foursquare.com';
+  }
+</script>
+</head>
+<body class="notrans">
+  <div id="wrapper">
+    <div id="desktopHeader" class="consumerMode">
+      <div class="wrap">
+        <div class="leftSide">
+          <div class="logoArea">
+            <a href="https://github.com/foursquare" id="logo">Foursquare</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container" class="wrap">
+      <div class="newHomepage">
+        <div class="contentSections">
+          <div class="exploreResultSection homepageSection bestNearby whiteSection">
+            <div class="contentWrapper">
+              <h1>What are you looking for?</h1>
+              <ul class="chiclets">
+                <li class="food">
+                  <a class="chicletLink" href="#android">
+                    <span class="chicletText">Android</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+                <li class="coffee">
+                  <a class="chicletLink" href="#ios">
+                    <span class="chicletText">iOS</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+                <li class=" outdoors">
+                  <a class="chicletLink" href="#windows">
+                    <span class="chicletText">Windows Phone</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+                <li class="drinks">
+                  <a class="chicletLink" href="#scala">
+                    <span class="chicletText">Scala</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+                <li class="shops">
+                  <a class="chicletLink" href="#python">
+                    <span class="chicletText">Python</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+                <li class="arts">
+                  <a class="chicletLink" href="/explore?near=Milpitas, CA&cat=arts">
+                    <span class="chicletText">Pants</span>
+                    <div class="photoShadow"></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {{#categories}}
+          <div class="exploreResultSection homepageSection newVenues {{display}}">
+            <div class="contentWrapper">
+              <h2 id="{{index}}">{{name}}</h2>
+              <ul class="venueList">
+                {{#has_repos_with_images}}
+                {{#repos_with_images}}
+                <!-- class="lastInRow" -->
+                <li class="">
+                  <div class="venueInfo">
+                    <span class="venueScore positive" title="9.0">
+                      <span >9.0</span>
+                    </span>
+                    <h3>
+                      <a href="{{href}}">{{name}}</a>
+                    </h3>
+                    <p class="venueCategoryAddress">
+                      {{#website}}<a class="categoryLink" href="{{website}}" target="_blank">Website</a>{{/website}}
+                    </p>
+                  </div>
+                  <div class="venuePhotoWrapper">
+                    <a class="photoShadowWrapper" href="{{website}}">
+                      <div class="photoShadow"></div>
+                    </a>
+                    <img alt="" class="photo" src="/repo_images/{{name}}.jpg" />
+                  </div>
+                  <div class="tipContent">
+                    <span class="userName">Description: </span>
+                    <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
+                  </div>
+                </li>
+                {{/repos_with_images}}
+                {{/has_repos_with_images}}
+                {{#has_repos_without_images}}
+                {{#repos_without_images}}
+                <li class="lastInRow ">
+                  <div class="venueInfo">
+                    <span class="venueScore positive" title="9.0">
+                      <span >9.0</span>
+                    </span>
+                    <h3>
+                      <a href="{{href}}">{{name}}</a>
+                    </h3>
+                    <p class="venueCategoryAddress">
+                      {{#website}}<a class="categoryLink" href="{{website}}" target="_blank">Website</a>{{/website}}
+                    </p>
+                  </div>
+                  <div class="venuePhotoWrapper">
+                    <a class="photoShadowWrapper" href="{{website}}">
+                      <div class="photoShadow"></div>
+                    </a>
+                    <img alt="" class="photo" src="/repo_images/{{name}}.jpg" />
+                  </div>
+                  <div class="tipContent">
+                    <span class="userName">Description: </span>
+                    <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
+                  </div>
+                </li>
+                {{/repos_without_images}}
+                {{/has_repos_without_images}}
+              </ul>
+            </div>
+          </div>
+          
+          {{/categories}}
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <div id="noscript">
+        <h3>You must enable JavaScript to use foursquare.com</h3>
+        <p>
+          We use the latest and greatest technology available to provide the best possible web experience.
+          <br />
+          Please enable JavaScript in your browser settings to continue.
+        </p>
+        <p class="small">
+          <a href="/download">Download Foursquare</a>
+          for your smart phone and start exploring the world around you!
+        </p>
+      </div>
+    </noscript>
+  </div>
+</body>
+</html>

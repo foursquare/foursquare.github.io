@@ -1,0 +1,9 @@
+{
+    "repos": {
+        "foursquare-bb10-sdk": [ "BlackBerry" ],
+        "Haneke": [ "Android" ],
+        "FSQCollectionViewAlignedLayout":  [ "Android"]
+    },
+  "custom": [
+  ]
+}
