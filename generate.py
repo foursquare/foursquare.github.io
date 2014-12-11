@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# From https://github.com/square/square.github.io
 
 from collections import defaultdict
 import codecs
@@ -74,7 +75,6 @@ context = {
 
 # Loop over the category names sorted alphabetically (case-insensitive) with 'Other' last.
 for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is not 'Other' else 'z'*10):
-  print category_name
   data = {
     'name': category_name,
     'index': category_name.lower(),

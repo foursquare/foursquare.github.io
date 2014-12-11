@@ -1,8 +1,7 @@
 {
     "repos": {
-        "foursquare-bb10-sdk": [ "BlackBerry" ],
-        "Haneke": [ "Android" ],
-        "FSQCollectionViewAlignedLayout":  [ "Android"]
+        "FSQCollectionViewAlignedLayout": [ "iOS" ],
+        "FSQLocationBroker":  [ "iOS" ]
     },
   "custom": [
   ]
