@@ -10,19 +10,17 @@
   <meta content="Start the foursquare App" name="msapplication-tooltip" />
   <meta content="/" name="msapplication-starturl" />
   <meta content="width=1024;height=768" name="msapplication-window" />
-<!--   <meta content="Foursquare helps you find the perfect places to go with friends. Discover the best food, nightlife, and entertainment in your area." name="description" /> -->
-<!--   <meta content="Foursquare,foursq,4sq,check-in,badges,explore,recommendation,local,review,tip,restaurant,bar,coffee,park,New York,San Francisco,Chicago,London,sushi,pizza,cocktails,vacation,food,search,cities" name="keywords" /> -->
   <link href="https://ss1.4sqi.net/styles/master-f2c1890513ac1eb7002a67c8c0939d72.css" type="text/css" rel="stylesheet"/>
   <link href="https://ss1.4sqi.net/styles/standalone-pages/new-logged-in-homepage-08a5b5247f6f017f8821d94022a2b967.css" type="text/css" rel="stylesheet"/>
   <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
   <link rel="logo" href="https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.svg" type="image/svg"/>
   <script type="text/javascript" src="https://ss1.4sqi.net/scripts/third_party/jquery-1.7.2.min-b8d64d0bc142b3f670cc0611b0aebcae.js"></script>
-  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/leaflet/root-769b42a8d1a484c702db4f44bfd715e0.js"></script>
+  <!-- <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/leaflet/root-769b42a8d1a484c702db4f44bfd715e0.js"></script>
   <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/chrome/root-51d1a8400fde312182bb11910dc00b49.js"></script>
   <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/foursquare/root-0e93fdc531ae3f3daa5d2c56e0a8041a.js"></script>
   <script type="text/javascript" src="https://ss0.4sqi.net/scripts/build/en/foursquare/map-support-23c66fbc82e3b6f7c4b34b53b771a0e1.js"></script>
-  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/foursquare/new-logged-in-homepage-1dfb0833de2dc8d417efba3745f89b8f.js"></script>
+  <script type="text/javascript" src="https://ss1.4sqi.net/scripts/build/en/foursquare/new-logged-in-homepage-1dfb0833de2dc8d417efba3745f89b8f.js"></script> -->
   <script type="text/javascript">
   var _gaq = _gaq || [];
   if (window.location.host === 'developer.foursquare.com') {
@@ -64,44 +62,17 @@
         <div class="contentSections">
           <div class="exploreResultSection homepageSection bestNearby whiteSection">
             <div class="contentWrapper">
-              <h1>What are you looking for?</h1>
+              <h1>Welcome to the Foursquare open source portal where you can find all of the great projects our engineers are working on that we have shared with the community.
+              <h1>What platform are you working on?</h1>
               <ul class="chiclets">
+              {{#categories}}
                 <li class="food">
-                  <a class="chicletLink" href="#android">
-                    <span class="chicletText">Android</span>
+                  <a class="chicletLink" href="#{{index}}">
+                    <span class="chicletText">{{name}}</span>
                     <div class="photoShadow"></div>
                   </a>
                 </li>
-                <li class="coffee">
-                  <a class="chicletLink" href="#ios">
-                    <span class="chicletText">iOS</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
-                <li class=" outdoors">
-                  <a class="chicletLink" href="#windows">
-                    <span class="chicletText">Windows Phone</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
-                <li class="drinks">
-                  <a class="chicletLink" href="#scala">
-                    <span class="chicletText">Scala</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
-                <li class="shops">
-                  <a class="chicletLink" href="#python">
-                    <span class="chicletText">Python</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
-                <li class="arts">
-                  <a class="chicletLink" href="/explore?near=Milpitas, CA&cat=arts">
-                    <span class="chicletText">Pants</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
+              {{/categories}}
               </ul>
             </div>
           </div>
@@ -151,16 +122,10 @@
                     <p class="venueCategoryAddress">
                       {{#website}}<a class="categoryLink" href="{{website}}" target="_blank">Website</a>{{/website}}
                     </p>
-                  </div>
-                  <div class="venuePhotoWrapper">
-                    <a class="photoShadowWrapper" href="{{website}}">
-                      <div class="photoShadow"></div>
-                    </a>
-                    <img alt="" class="photo" src="/repo_images/{{name}}.jpg" />
-                  </div>
-                  <div class="tipContent">
-                    <span class="userName">Description: </span>
-                    <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
+                    <div class="tipContent" style="margin:10px 0px 0px 0px">
+                      <span class="userName">Description: </span>
+                      <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
+                    </div>
                   </div>
                 </li>
                 {{/repos_without_images}}
@@ -168,7 +133,6 @@
               </ul>
             </div>
           </div>
-          
           {{/categories}}
         </div>
       </div>

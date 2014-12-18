@@ -1,7 +1,8 @@
 {
     "repos": {
         "FSQCollectionViewAlignedLayout": [ "iOS" ],
-        "FSQLocationBroker":  [ "iOS" ]
+        "FSQLocationBroker": [ "iOS" ],
+        "foursquare-bb10-sdk": [ "BlackBerry" ]
     },
   "custom": [
   ]
