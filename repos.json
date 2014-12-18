@@ -1,8 +1,10 @@
 {
     "repos": {
+        "foursquare-ios-oauth": [ "iOS" ],
         "FSQCollectionViewAlignedLayout": [ "iOS" ],
         "FSQLocationBroker": [ "iOS" ],
-        "foursquare-bb10-sdk": [ "BlackBerry" ]
+        "foursquare-bb10-sdk": [ "BlackBerry" ],
+        "foursquare-android-oauth": [ "Android" ]
     },
   "custom": [
   ]
