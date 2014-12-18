@@ -6,7 +6,8 @@
         "foursquare-bb10-sdk": [ "BlackBerry" ],
         "foursquare-android-oauth": [ "Android" ],
         "spindle": [ "Server" ],
-        "rogue": [ "Server" ]
+        "rogue": [ "Server" ],
+	"twofishes": [ "Server" ]
     },
   "custom": [
   ]
