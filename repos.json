@@ -4,7 +4,9 @@
         "FSQCollectionViewAlignedLayout": [ "iOS" ],
         "FSQLocationBroker": [ "iOS" ],
         "foursquare-bb10-sdk": [ "BlackBerry" ],
-        "foursquare-android-oauth": [ "Android" ]
+        "foursquare-android-oauth": [ "Android" ],
+        "spindle": [ "Server" ],
+        "rogue": [ "Server" ]
     },
   "custom": [
   ]
