@@ -78,11 +78,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
   data = {
     'name': category_name,
     'index': category_name.lower(),
-    'display': "lightBlueSection" if len(context["categories"]) % 2 == 0 else "whiteSection",
-    'has_repos_with_images': False,
-    'has_repos_without_images': False,
-    'repos_with_images': [],
-    'repos_without_images': [],
+    'repos': [],
   }
 
   # Loop over category repos sorted alphabetically (case-insensitive).
@@ -94,12 +90,7 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
       'website': repo_data.get('homepage', None),
       'description': repo_data.get('description', None)
     }
-    if os.path.exists(os.path.join('repo_images', '%s.jpg' % name)):
-      data['repos_with_images'].append(repo)
-      data['has_repos_with_images'] = True
-    else:
-      data['repos_without_images'].append(repo)
-      data['has_repos_without_images'] = True
+    data['repos'].append(repo)
 
   context['categories'].append(data)
 

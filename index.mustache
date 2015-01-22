@@ -10,8 +10,6 @@
   <meta content="Start the foursquare App" name="msapplication-tooltip" />
   <meta content="/" name="msapplication-starturl" />
   <meta content="width=1024;height=768" name="msapplication-window" />
-  <link href="https://ss1.4sqi.net/styles/master-f2c1890513ac1eb7002a67c8c0939d72.css" type="text/css" rel="stylesheet"/>
-  <link href="https://ss1.4sqi.net/styles/standalone-pages/new-logged-in-homepage-08a5b5247f6f017f8821d94022a2b967.css" type="text/css" rel="stylesheet"/>
   <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
   <link rel="logo" href="https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.svg" type="image/svg"/>
@@ -45,98 +43,226 @@
     _sf_async_config.domain = 'foursquare.com';
   }
 </script>
+<style type="text/css">
+html {box-sizing: border-box;}
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+*, *:before, *:after {box-sizing: inherit;}
+body {
+  color: #4E595D;
+  font: normal 13px/140% "Helvetica Neue",Helvetica,Verdana,Arial,sans-serif;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 50px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0 0 32px;
+}
+.header {
+  background: #0732A2;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000000;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 1060px;
+}
+#logo {
+  background: url('img/logo.png') left center no-repeat;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 12px 19px 8px 0;
+  text-indent: -9999px;
+  width: 145px;
+}
+.banner {
+  background: #00B551;
+  color: #FFFFFF;
+  display: table;
+  height: 300px;
+  margin-top: 60px;
+  margin-bottom: 22px;
+  text-align: center;
+  width: 100%;
+}
+.banner .inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.row {
+  border-bottom: 1px solid #F0F1F2;
+  overflow: hidden;
+  padding: 32px 20px 32px 20px;
+}
+.row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.system {
+  clear: both;
+  overflow: hidden;
+}
+.system .headline {margin-bottom: 20px;}
+.system .headline .icon {
+  display: table;
+  float: left;
+  height: 44px;
+  margin-right: 20px;
+  width: 44px;
+}
+.system .headline .icon .inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.system .headline .icon .inner img {}
+.system .headline h2 {
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+.system .project {
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 1.886792452%;
+  width: 32.075471698%;
+}
+.system .project:nth-child(3n+1) {margin-right: 0;}
+.system .project .title {
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 5px;
+}
+.system .project .title span {
+  color: #AEB4B6;
+  font-size: 13px;
+  font-weight: bold;
+}
+.system .project .title a {text-decoration: none;}
+#footer {
+  background: #F0F1F2;
+  color: #AEB4B6;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 64px;
+  padding: 45px 0 20px;
+  text-align: center;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+            transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@media screen and (max-width: 800px) {
+  #logo {margin-left: 20px;}
+  .banner {padding: 0 20px;}
+  .banner h1 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 35px;
+  }
+  .system .project {
+    float: left;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+.system .project {
+    float: none;
+    width: auto;
+  }
+}
+</style>
+<meta name="viewport" content="width=device-width">
 </head>
 <body class="notrans">
   <div id="wrapper">
-    <div id="desktopHeader" class="consumerMode">
+    <div class="header">
       <div class="wrap">
-        <div class="leftSide">
-          <div class="logoArea">
-            <a href="https://github.com/foursquare" id="logo">Foursquare</a>
+        <a href="https://github.com/foursquare" id="logo">Foursquare</a>
+      </div>
+    </div>
+    <div id="container">
+
+      <div class="banner">
+        <div class="inner">
+        <div class="wrap">
+          <h1 class="fadeInUp">Welcome to the Foursquare open source portal where you can find all of the great projects our engineers are working on that we have shared with the community.</h1>
+        </div>
+        </div>
+      </div>
+      {{#categories}}
+      <div class="row">
+        <div class="wrap">
+          <div class="system">
+            <div class="headline">
+              <div class="icon">
+                <div class="inner"><img src="img/{{name}}.png" /></div>
+              </div>
+              <h2>{{name}}</h2>
+            </div>
+            {{#repos}}
+            <div class="project">
+              <div class="title">
+                <h3><a href="{{href}}">{{name}}</a></h3>
+                <span>Android</span>
+              </div>
+              <p data-fulltext="{{description}}">{{description}}</p>
+            </div>
+            {{/repos}}
           </div>
         </div>
       </div>
+      {{/categories}}
     </div>
-    <div id="container" class="wrap">
-      <div class="newHomepage">
-        <div class="contentSections">
-          <div class="exploreResultSection homepageSection bestNearby whiteSection">
-            <div class="contentWrapper">
-              <h1>Welcome to the Foursquare open source portal where you can find all of the great projects our engineers are working on that we have shared with the community.
-              <h1>What platform are you working on?</h1>
-              <ul class="chiclets">
-              {{#categories}}
-                <li class="food">
-                  <a class="chicletLink" href="#{{index}}">
-                    <span class="chicletText">{{name}}</span>
-                    <div class="photoShadow"></div>
-                  </a>
-                </li>
-              {{/categories}}
-              </ul>
-            </div>
-          </div>
-          {{#categories}}
-          <div class="exploreResultSection homepageSection newVenues {{display}}">
-            <div class="contentWrapper">
-              <h2 id="{{index}}">{{name}}</h2>
-              <ul class="venueList">
-                {{#has_repos_with_images}}
-                {{#repos_with_images}}
-                <!-- class="lastInRow" -->
-                <li class="">
-                  <div class="venueInfo">
-                    <span class="venueScore positive" title="9.0">
-                      <span >9.0</span>
-                    </span>
-                    <h3>
-                      <a href="{{href}}">{{name}}</a>
-                    </h3>
-                    <p class="venueCategoryAddress">
-                      {{#website}}<a class="categoryLink" href="{{website}}" target="_blank">Website</a>{{/website}}
-                    </p>
-                  </div>
-                  <div class="venuePhotoWrapper">
-                    <a class="photoShadowWrapper" href="{{website}}">
-                      <div class="photoShadow"></div>
-                    </a>
-                    <img alt="" class="photo" src="/repo_images/{{name}}.jpg" />
-                  </div>
-                  <div class="tipContent">
-                    <span class="userName">Description: </span>
-                    <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
-                  </div>
-                </li>
-                {{/repos_with_images}}
-                {{/has_repos_with_images}}
-                {{#has_repos_without_images}}
-                {{#repos_without_images}}
-                <li class="lastInRow ">
-                  <div class="venueInfo">
-                    <span class="venueScore positive" title="9.0">
-                      <span >9.0</span>
-                    </span>
-                    <h3>
-                      <a href="{{href}}">{{name}}</a>
-                    </h3>
-                    <p class="venueCategoryAddress">
-                      {{#website}}<a class="categoryLink" href="{{website}}" target="_blank">Website</a>{{/website}}
-                    </p>
-                    <div class="tipContent" style="margin:10px 0px 0px 0px">
-                      <span class="userName">Description: </span>
-                      <span class="tipText" data-fulltext="{{description}}" style="max-height: 32px;">{{description}}</span>
-                    </div>
-                  </div>
-                </li>
-                {{/repos_without_images}}
-                {{/has_repos_without_images}}
-              </ul>
-            </div>
-          </div>
-          {{/categories}}
-        </div>
-      </div>
+
+    <div id="footer">
+      <p>Footer text would go in here, unclear if we need any links or legal stuff</p>
+      <p>&copy; Foursquare</p>
     </div>
+
     <noscript>
       <div id="noscript">
         <h3>You must enable JavaScript to use foursquare.com</h3>
@@ -151,6 +277,5 @@
         </p>
       </div>
     </noscript>
-  </div>
 </body>
 </html>
