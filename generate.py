@@ -84,11 +84,13 @@ for category_name in sorted(categories.keys(), key=lambda s: s.lower() if s is n
   # Loop over category repos sorted alphabetically (case-insensitive).
   for repo_data in sorted(categories[category_name], key=lambda s: s['name'].lower()):
     name = repo_data['name']
+    website = repo_data.get('homepage', '')
     repo = {
       'name': name,
       'href': repo_data['html_url'],
       'website': repo_data.get('homepage', None),
-      'description': repo_data.get('description', None)
+      'description': repo_data.get('description', None),
+      'has_website' : (False if (website is None or len(website) <= 0) else True),
     }
     data['repos'].append(repo)
 
