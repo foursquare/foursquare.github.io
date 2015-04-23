@@ -163,6 +163,29 @@ h2 {
   padding: 45px 0 20px;
   text-align: center;
 }
+.contain {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 0 25px 0;
+  text-align: center;
+  position: relative;
+  font-size: 11px;
+  /* font-weight: bold; */
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style: none;
+}
+.contain ul li {
+  display: inline;
+}
+.contain ul li a {
+  color: #999;
+  margin: 0 7px;
+  text-decoration: none
+}
+
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -261,8 +284,22 @@ h2 {
     </div>
 
     <div id="footer">
-      <p>Footer text would go in here, unclear if we need any links or legal stuff</p>
-      <p>&copy; Foursquare</p>
+      <div class="contain">
+         <ul>
+          <li><a href="http://foursquare.com/about">About</a></li>
+          <li><a href="http://blog.foursquare.com">Blog</a></li>
+          <li><a href="http://engineering.foursquare.com">Eng Blog</a></li>
+          <li><a href="http://business.foursquare.com">Business</a></li>
+          <li><a href="http://foursquare.com/cities">Cities</a></li>
+          <li><a href="http://developer.foursquare.com">Developers</a></li>
+          <li><a href="http://foursquare.com/help">Help</a></li>
+          <li><a href="http://foursquare.com/jobs/">Jobs</a></li>
+          <li><a href="http://foursquare.com/legal/cookiepolicy">Cookies (Updated)</a></li>
+          <li><a href="http://foursquare.com/legal/privacy">Privacy (Updated)</a></li>
+          <li><a href="http://foursquare.com/legal/terms">Terms</a></li>
+        </ul>
+        <p>Foursquare © 2015 &nbsp;Lovingly made in NYC &amp; SF</p>
+      </div>
     </div>
 
     <noscript>
