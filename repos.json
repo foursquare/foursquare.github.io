@@ -3,11 +3,13 @@
         "foursquare-ios-oauth": [ "iOS" ],
         "FSQCollectionViewAlignedLayout": [ "iOS" ],
         "FSQLocationBroker": [ "iOS" ],
+        "FSQCellManifest": [ "iOS" ],
+        "FSQMessageForwarder": [ "iOS" ],
         "foursquare-bb10-sdk": [ "BlackBerry" ],
         "foursquare-android-oauth": [ "Android" ],
         "spindle": [ "Server" ],
         "rogue": [ "Server" ],
-	"twofishes": [ "Server" ]
+		"twofishes": [ "Server" ]
     },
   "custom": [
   ]
