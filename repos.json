@@ -7,6 +7,7 @@
         "FSQMessageForwarder": [ "iOS" ],
         "foursquare-bb10-sdk": [ "BlackBerry" ],
         "foursquare-android-oauth": [ "Android" ],
+        "placepicker-sdk-sample": [ "Android" ],
         "spindle": [ "Server" ],
         "rogue": [ "Server" ],
 		"twofishes": [ "Server" ]
