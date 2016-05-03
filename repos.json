@@ -1,17 +1,62 @@
 {
     "repos": {
+        "foursquare-android-oauth": [ "Android" ],
+        "placepicker-sdk-sample": [ "Android" ],
         "foursquare-ios-oauth": [ "iOS" ],
         "FSQCollectionViewAlignedLayout": [ "iOS" ],
         "FSQLocationBroker": [ "iOS" ],
         "FSQCellManifest": [ "iOS" ],
-        "FSQMessageForwarder": [ "iOS" ],
-        "foursquare-bb10-sdk": [ "BlackBerry" ],
-        "foursquare-android-oauth": [ "Android" ],
-        "placepicker-sdk-sample": [ "Android" ],
-        "spindle": [ "Server" ],
-        "rogue": [ "Server" ],
-		"twofishes": [ "Server" ]
+        "FSQMessageForwarder": [ "iOS" ]
     },
-  "custom": [
-  ]
+  "custom":
+    [
+        {
+            "Fsq.io":
+            {
+                "description": "A Scala code generator for Thrift",
+                "name": "Spindle",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/jvm/io/fsq/spindle"
+           }
+        },
+        {
+            "Fsq.io":
+            {
+                "description": "Drop-in replacement for the Pants Ivy resolver",
+                "name": "Pom-resolve",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/python/fsqio/pants/pom"
+           }
+        },
+        {
+            "Fsq.io":
+            {
+                "description": "A coarse, splitting geocoder and reverse geocoder in Scala",
+                "name": "Twofishes",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/jvm/io/fsq/twofishes"
+           }
+        },
+        {
+            "Fsq.io":
+            {
+                "description": "A lexically based BUILD file generator for the Pants build system",
+                "name": "Buildgen",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/python/fsqio/pants/buildgen"
+           }
+        },
+        {
+            "Fsq.io":
+            {
+                "description": "An exception aggregator using mongodb",
+                "name": "Exceptionator",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/jvm/io/fsq/exceptionator"
+           }
+        },
+        {
+            "Fsq.io":
+            {
+                "description": "Custom Scala libraries for Lists, Identity and more. The accumulated knowedge from years of Scala engineering",
+                "name": "Common",
+                "html_url": "https://github.com/foursquare/fsqio/tree/master/src/jvm/io/fsq/common/scala"
+           }
+        }
+    ]
 }

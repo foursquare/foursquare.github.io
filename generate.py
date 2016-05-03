@@ -27,7 +27,7 @@ except:
 def gh_repo(name):
   print('Fetching "%s" repo information...' % name)
   # Use the following for development so you do not hammer the GitHub API.
-  #return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com', 'description': 'Description!'}
+  # return {'name': name, 'html_url': 'http://google.com', 'homepage': 'http://example.com', 'description': 'Description!'}
 
   if not logged_in:
     time.sleep(2.0) # Take a nap so GitHub doesn't aggressively throttle us.
@@ -61,12 +61,9 @@ for repo in repos.keys():
     categories[repo_cat].append(repo_data)
 
 # Loop though custom repos adding their data (faked to look like GitHub's) to the specified categories.
-for repo_data in custom:
-  repo_cats = repo_data['categories']
-  if repo_cats is None:
-    repo_cats = ['Other']
-  for repo_cat in repo_cats:
-    categories[repo_cat].append(repo_data)
+for key in custom:
+  for k, v in key.items():
+    categories[k].append(v)
 
 # Template context that will be used for rendering.
 context = {
